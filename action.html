@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связь - f0ror.visual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">  
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<body>
+
+<header class="header">
+    <div class="wrapper">
+        
+        <div class="header_wrap">
+                
+            <nav class="header_nav_right">
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="index.html" class="header_link">Главная</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="services.html" class="header_link">Услуги</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_logo">
+                <img src="./Images/LOGO.svg" alt="F0ror.Vusial" class="header_logo-svg">
+            </div>
+            <nav class="header_nav_left">
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="action.html" class="header_link bold">Связаться</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#!" class="header_link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="action">
+        <div class="wrapper">
+            <div class="action_main-content">
+                <div class="action-content">
+                    <h2 class="action_title">Обсудим<br>ваш 
+                        <span class="colortext">проект</span></h2>
+                    <p class="action_desc">
+                        Заполните указанную форму<br>
+                        и мы свяжемся с вами 
+                    </p>
+                    <h3 class="action_title-form">Необходимая<br>информация</h3>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" name="ФИО" class="form-control" style="height: 48px" id="formInput" placeholder="Ваше ФИО">
+                        </div>
+                        <div class="mb-3">
+                        <input type="text" name="Почта" class="form-control" style="height: 48px" id="formInput" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="Телефон"class="form-control" style="height: 48px" id="formInput" placeholder="Телефон">
+                        </div>
+                        <div class="mb-3">
+                        <input type="text" name="Задача" class="form-control" style="height: 48px" id="formInput" placeholder="Задача">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="Бюджет" class="form-control" style="height: 48px" id="formInput" placeholder="Бюджет">
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="textarea" name="Описание" class="form-control" style="height: 144px" placeholder="Краткое описание"></textarea>
+                        </div>                  
+                    <!-- Для отравки формы reset заменить на submit -->
+                    <button type="reset" style="height: 48px" class="btn btn-primary btn-dark col-7" data-bs-toggle="modal" data-bs-target="#modalColor">
+                        Отправить
+                    </button>
+                    <div class="modal fade" data-modal-color="" id="modalColor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center">
+                                <div class="modal-header text-center">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h3 class="modal-title">Заявка принята!</h3>
+                                    <p class="modal-desc">Мы перезвоним вам в течение часа<br>для уточнения деталей</p>                        
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="action_content-right">
+                    <img src="./Images/f0ror_background.png" alt="f0ror.visual">
+                </div> 
+            </div>
+        </div>
+    </section>
+</main>
+    
+<footer class="footer">
+    <div class="footer_title">
+        <h1 class="footer_f0">F0ROR VISUAL</h1>
+    </div>
+    <div class="wrapper">
+        <div class="footer_items">
+            <div class="footer_left">
+                <p class="footer_text">F0ROR.VISUAL</p>
+                <p class="footer_text">Все права защищены</p>
+            </div>
+            <nav class="footer_nav">
+                <a href="index.html" class="footer_link">Главная</a>
+                <a href="services.html" class="footer_link">Услуги</a>
+                <a href="action.html" class="footer_link bold">Связаться</a>
+                <a href="#!" class="footer_link">Контакты</a>
+            </nav>
+            <div class="footer_right">
+                <p class="footer_text">©2023</p>
+                <img src="./Images/footer_logo.svg" alt="FV">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
